@@ -148,6 +148,7 @@ echo $trang."━━━━━━━━━━━━━━━━━━━━━━�
 
 echo $van.$luc." Nhập Số ".$do."[".$trang."1".$do."]".$luc." TOOL GOLIKE TIKTOK ".$do."[".$vang."FOLLOW".$do."] \n";
 echo $van.$luc." Nhập Số ".$do."[".$trang."1.2".$do."]".$luc." TOOL GOLIKE TIKTOK ".$do."[".$vang."FOLLOW V2".$do."] \n";
+echo $van.$luc." Nhập Số ".$do."[".$trang."1.3".$do."]".$luc." TOOL GOLIKE TIKTOK ".$do."[".$vang."FOLLOW+TIM".$do."] \n";
 echo $van.$luc." Nhập Số ".$do."[".$trang."2".$do."]".$luc." TOOL GOLIKE INSTAGRAM ".$do."[".$vang."VIP".$do."] \n";
 echo $van.$luc." Nhập Số ".$do."[".$trang."3".$do."]".$luc." TOOL SHARE ẢO PAGE".$do."[".$vang."VIP".$do."] \n";
 echo $van.$luc." Nhập Số ".$do."[".$trang."4".$do."]".$luc." TOOL TDS TIKTOK".$do."[".$vang."VIP".$do."] \n";
@@ -166,6 +167,8 @@ while(true){
 	eval(file_get_contents('https://raw.githubusercontent.com/dumemayy/concac/main/golike'));
 }else if ( $ch == 1.2){
 	eval(file_get_contents('https://raw.githubusercontent.com/dumemayy/concac/main/golikev1'));
+}else if ( $ch == 1.3){
+	eval(file_get_contents('https://raw.githubusercontent.com/dumemayy/concac/main/golikev2'));
 }else if ( $ch == 2){
 	eval(file_get_contents('https://raw.githubusercontent.com/dumemayy/concac/main/golikeig'));
 }else if ( $ch == 3){
