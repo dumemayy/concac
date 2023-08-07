@@ -167,7 +167,7 @@ while(true){
 	eval(file_get_contents('https://raw.githubusercontent.com/dumemayy/concac/main/golike'));
 }else if ( $ch == 1.2){
 	eval(file_get_contents('https://raw.githubusercontent.com/dumemayy/concac/main/golikev2'));
-}else if ( $ch == 1.2){
+}else if ( $ch == 1.3){
 	eval(file_get_contents('https://raw.githubusercontent.com/dumemayy/concac/main/golikev1'));
 }else if ( $ch == 2){
 	eval(file_get_contents('https://raw.githubusercontent.com/dumemayy/concac/main/golikeig'));
