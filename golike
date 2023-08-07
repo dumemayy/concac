@@ -104,7 +104,7 @@ $ff++;continue;}else{break;}
 
 
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
-echo "Nhập Tài Khoản Chạy : ";
+echo $green." Nhập Tài Khoản Chạy : ";
 
 $co = trim(fgets(STDIN));
 
