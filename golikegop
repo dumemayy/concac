@@ -59,7 +59,7 @@ $vanv = "".$do."》".$xanh."》".$vang."》".$luc;
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
 echo "$van \033[1;97m~[\033[1;91m+\033[1;97m] \033[1;33mBẢN QUYỀN: \033[1;32m PHAN ANH TUẤN \n";
 echo "$van \033[1;97m~[\033[1;91m+\033[1;97m] \033[1;33mBox Zalo : \033[1;97m https://zalo.me/g/ykntan866 \n";
-echo "$van \033[1;97m~[\033[1;91m+\033[1;97m] \033[1;95mMua Key Phí Liên Hệ Admin \n";
+echo "$van \033[1;97m~[\033[1;91m+\033[1;97m] \033[1;95mYoutube : Phan Anh Tuấn \n";
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
 
 echo $van.$luc." Nhập Số ".$do."[".$trang."1".$do."]".$luc." Để Vào Tool Free ".$do."[".$vang."Vượt Link".$do."] \n";
