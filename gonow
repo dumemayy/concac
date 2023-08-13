@@ -61,11 +61,19 @@ echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;33mBẢN QUYỀN: \033[1;
 echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;33mBox Zalo : \033[1;97m https://zalo.me/g/ykntan866 \n";
 echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;95mYoutube : Phan Anh Tuấn \n";
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
-echo $green."NHẬP AUTHORIZATION GOLIKE : ";
-$authu = trim(fgets(STDIN));
+if(file_exists("authorization.txt")!=true){
+$authorization=readline("Nhập Authorization : ");
+$file=fopen("authorization.txt","w");
+fwrite($file,"<?php\n");
+fwrite($file,"$"."authu='$authorization';\n");
+fclose($file);
+}
+include("authorization.txt");
+echo "Đã lưu Authorization vào file:authorization.txt\n";
+sleep(1);
 $lop = $res."============".$nau."===========".$yellow."===========".$green."==============\n";
 system('clear');
-///// Tools Nguyễn Văn Phúc /////
+///// Tools  /////
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
 echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;33mBẢN QUYỀN: \033[1;32m PHAN ANH TUẤN \n";
 echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;33mBox Zalo : \033[1;97m https://zalo.me/g/ykntan866 \n";
@@ -199,7 +207,6 @@ cc($p);
 
 
 }
-
 
 
 
