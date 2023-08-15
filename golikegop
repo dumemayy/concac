@@ -115,13 +115,13 @@ echo $vang." Key Chính Xác  \n";
 
 sleep(1);
 
-}else if ( $pass == "concac" ){
+}else if ( $pass == "deccailon" ){
 
 echo $vang." Key Admin \n";
 
 sleep(1);
 
-}else if ( $pass == "concak" ){
+}else if ( $pass == "ditmemay" ){
 
 echo $vang." Key Phí \n";
 
