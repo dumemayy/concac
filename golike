@@ -79,6 +79,9 @@ echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;33mBẢN QUYỀN: \033[1;
 echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;33mBox Zalo : \033[1;97m https://zalo.me/g/ykntan866 \n";
 echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;95mYoutube : Phan Anh Tuấn \n";
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
+echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;32mNhập Authorization Không Hiện Ra Acc Để Chạy Là Do Sai Authorization, Vô Tệp Tin Xóa File authorization.txt Để Nhập Lại Authorization Khác \n";
+echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;33mHỗ Trợ Lấy Authorization :https://zalo.me/atuanprofile \n";
+echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
 ////////////////////////////////////////////////////////////////
 $html="htmlspecialchars_decode";
 ////////////////golike//////////////////////////
@@ -107,13 +110,13 @@ while(true){
 $id = $go['data'][$ff]['id'];
 $ten = $go['data'][$ff]['nickname'];
 if($ten == true){
-echo $yellow." [$ff] => NAME : $ten | ID : $id      \n";
+echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;32mNhập \033[1;31m[$cam$ff\033[1;31m] \033[1;32mĐể Chạy Acc$cam $ten $red| $cam $id      \n";
 $ff++;continue;}else{break;}
 }
 
 
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
-echo $green." Nhập Tài Khoản Chạy : ";
+echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;32mNhập : ";
 
 $co = trim(fgets(STDIN));
 
@@ -124,17 +127,15 @@ $id = $go['data'][$co]['id'];
 $ten = $go['data'][$co]['nickname'];
 
 
-echo $green." Nhập Delay : ";
+echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;32mNhập Delay : ";
 $dl = trim(fgets(STDIN));
 
 system('clear');
 ///// Tool /////
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
-echo "$phucc \033[1;97mBẢN QUYỀN : \033[1;93m Phan Anh Tuấn \n";
-echo "$phucc \033[1;97mBOX ZALO: \033[1;32m https://zalo.me/g/ykntan866 \n";
-echo "$phucc \033[1;97mMB : 7010000467 \n";
-cc($phucc);
-echo "$phucc \033[1;97mTOOL : GOLIKE   \n";
+echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;33mAdmin: \033[1;32m PHAN ANH TUẤN \n";
+echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;33mBox Zalo : \033[1;97m https://zalo.me/g/ykntan866 \n";
+echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;95mYoutube : Phan Anh Tuấn \n";
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
 while(true){
 
@@ -207,7 +208,6 @@ cc($p);
 
 
 }
-
 
 
 
