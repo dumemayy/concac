@@ -69,7 +69,7 @@ fwrite($file,"$"."authu='$authorization';\n");
 fclose($file);
 }
 include("authorization.txt");
-echo "Đã lưu Authorization vào file:authorization.txt\n";
+echo "Đã lấy Authorization từ file:authorization.txt\n";
 sleep(1);
 $lop = $res."============".$nau."===========".$yellow."===========".$green."==============\n";
 system('clear');
@@ -78,6 +78,9 @@ echo $trang."━━━━━━━━━━━━━━━━━━━━━━�
 echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;33mBẢN QUYỀN: \033[1;32m PHAN ANH TUẤN \n";
 echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;33mBox Zalo : \033[1;97m https://zalo.me/g/ykntan866 \n";
 echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;95mYoutube : Phan Anh Tuấn \n";
+echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
+echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;32mNhập Authorization Không Hiện Ra Acc Để Chạy Là Do Sai Authorization, Vô Tệp Tin Xóa File authorization.txt Để Nhập Lại Authorization Khác \n";
+echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;33mHỗ Trợ Lấy Authorization :https://zalo.me/atuanprofile \n";
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
 ////////////////////////////////////////////////////////////////
 $html="htmlspecialchars_decode";
@@ -107,13 +110,13 @@ while(true){
 $id = $go['data'][$ff]['id'];
 $ten = $go['data'][$ff]['nickname'];
 if($ten == true){
-echo $yellow." [$ff] => NAME : $ten | ID : $id      \n";
+echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;32mNhập \033[1;31m[$cam$ff\033[1;31m] \033[1;32mĐể Chạy Acc$cam $ten $red| $cam $id      \n";
 $ff++;continue;}else{break;}
 }
 
 
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
-echo $green." Nhập Tài Khoản Chạy : ";
+echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;32mNhập : ";
 
 $co = trim(fgets(STDIN));
 
@@ -124,17 +127,15 @@ $id = $go['data'][$co]['id'];
 $ten = $go['data'][$co]['nickname'];
 
 
-echo $green." Nhập Delay : ";
+echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;32mNhập Delay : ";
 $dl = trim(fgets(STDIN));
 
 system('clear');
 ///// Tool /////
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
-echo "$phucc \033[1;97mBẢN QUYỀN : \033[1;93m Phan Anh Tuấn \n";
-echo "$phucc \033[1;97mBOX ZALO: \033[1;32m https://zalo.me/g/ykntan866 \n";
-echo "$phucc \033[1;97mMB : 7010000467 \n";
-cc($phucc);
-echo "$phucc \033[1;97mTOOL : GOLIKE   \n";
+echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;33mAdmin: \033[1;32m PHAN ANH TUẤN \n";
+echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;33mBox Zalo : \033[1;97m https://zalo.me/g/ykntan866 \n";
+echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;95mYoutube : Phan Anh Tuấn \n";
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
 while(true){
 
@@ -170,7 +171,7 @@ $nhan = json_decode($nhan,true);
 
 $se = $nhan['success'];
 
-for($time=3;$time>-1;$time--){
+for($time=2;$time>-1;$time--){
 echo $yellow."Vui lòng chờ $time để hoàn thành job \r";sleep(1);}
 $data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';
 $tsm3 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/",);
@@ -181,7 +182,7 @@ $nhan2 = json_decode($nhan2,true);
 
 $se = $nhan2['success'];
 
-for($time=3;$time>-1;$time--){
+for($time=2;$time>-1;$time--){
 echo $yellow."Vui lòng chờ $time để hoàn thành job \r";sleep(1);}
 $data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';
 $tsm4 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/",);
@@ -207,7 +208,6 @@ cc($p);
 
 
 }
-
 
 
 
