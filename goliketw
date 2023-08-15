@@ -93,7 +93,7 @@ $a2="user-agent: Mozilla/5.0 (Linux; Android 11; 220333QPG) AppleWebKit/537.36 (
 $a3="authorization: $authu";
 $a4="origin: https://app.golike.net";
 $a5 ="t: VFZSWk5VMVVaM3BOVkZrd1RuYzlQUT09";
-$b1 ="Host: dev.golike.net";
+$b1 ="Host: gateway.golike.net";
 $tsm = array($a1,$a2,$a3,$a4,$a5);
 $tsm1 = array($b1,$a2,$a3,$a4,$a5);
 
@@ -111,7 +111,7 @@ echo "$phucc \033[1;37m~[\033[1;31m+\033[1;37m] \033[1;95mYoutube : Phan Anh Tu�
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
 while(true){
 
-$golike = get("https://dev.golike.net/api/advertising/publishers/shopee/jobs?account_id=".$id."&data=null",$tsm1);
+$golike = get("https://gateway.golike.net/api/advertising/publishers/twitter/jobs?account_id=".$id."&data=null",$tsm1);
 $golike = json_decode($golike,true);
 $link = $golike['data']['link'];
 $uid = $golike['data']['id'];
@@ -122,7 +122,7 @@ $loi_id = $golike['data']['object_id'];
 if($ty =="comment"){
 echo "Đã bỏ qua job $ty         \r";$data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
 $tsm4 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");
-$loi = post("https://dev.golike.net/api/advertising/publishers/shopee/skip-jobs",$tsm4,$data);
+$loi = post("https://gateway.golike.net/api/advertising/publishers/twitter/skip-jobs",$tsm4,$data);
 $p = $red."Báo Cáo lỗi Thành công           \r";
 cc($p);
 continue;}else{}
@@ -133,7 +133,7 @@ echo $yellow."Vui lòng chờ $time để hoàn thành job \r";sleep(1);}
 $data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';
 $tsm2 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/",);
 
-$nhan = post("https://dev.golike.net/api/advertising/publishers/shopee/complete-jobs",$tsm2,$data);
+$nhan = post("https://gateway.golike.net/api/advertising/publishers/twitter/complete-jobs",$tsm2,$data);
 
 $nhan = json_decode($nhan,true);
 
@@ -144,7 +144,7 @@ echo $yellow."Vui lòng chờ $time để hoàn thành job \r";sleep(1);}
 $data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';
 $tsm3 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/",);
 
-$nhan2 = post("https://dev.golike.net/api/advertising/publishers/shopee/complete-jobs",$tsm3,$data);
+$nhan2 = post("https://gateway.golike.net/api/advertising/publishers/twitter/complete-jobs",$tsm3,$data);
 
 $nhan2 = json_decode($nhan2,true);
 
@@ -158,14 +158,13 @@ $ngay=date("H:i");$noe++;
 $uu=$nau."$noe ".$green." |$ngay| ".$trang." |$yellow$ty| ".$trang."|$nau$uid".$trang."|".$yellow." ".$red."SUCCESS ".$green."| +$coin |  \n";cc($uu);}else{
 $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
 $tsm4 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");
-$loi = post("https://dev.golike.net/api/advertising/publishers/shopee/skip-jobs",$tsm4,$data);
+$loi = post("https://gateway.golike.net/api/advertising/publishers/twitter/skip-jobs",$tsm4,$data);
 $p = $red."Báo Cáo lỗi Thành công           \r";
 cc($p);
 }
 
 
 }
-
 
 
 
